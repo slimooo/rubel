@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+{% include page_header.html collection_name="blogs" %}
+<section class="content__body px-1-5 py-4 bg-white">
+<article class="article max__body-width">
+  <div class="article__meta mb-2">
+    <p class="f-mono ts-0-9" itemprop="datePublished">Feb 2022</p>
+  </div>
+  {{ content }}
+</article>
+</section>
+<section class="content__pagination px-1-5 py-4 bg-secondary">
+<div class="max__body-width">
+  <div class="resources__block">
+    <div class="resources__heading mb-4">
+      <h3 class="ts-lede f-body tf-bold"> Latest Blogs 
+      </h3>
+    </div>
+    <div class="resources__content">
+      <div class="resources__entries">
+        {% for post in site.blogs  limit: "3" %}
+        <div class="post__item bg-white pb-1" data-post-item>
+          {% if post.image %}
+          <figure class="post__item-image ">
+            <img width="640" height="426" alt="{{ post.title }}" src="{{ post.image }}" />
+          </figure>
+          {% endif %}
+          <div class="post__item-meta px-1 ">
+            <p class="f-mono ts-0-9 mb-0-5">{{ post.date | date_to_string }}</p>
+          </div>
+          <div class="post__item-content px-1">
+            <a class="post__item-link td-none c-black" href="{{ post.url }}" title="{{ post.title }}" aria-label="{{ post.title }}">
+              <h5 class="mb-0"> {{ post.title }}</h5>
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="resources__button">
+        <a href="{{ site.url }}" title="{{ site.title }}" aria-label="{{ site.title }}" class="bg-black button td-none"> View All </a>
+      </div>
+    </div>
+  </div>
+</section>
