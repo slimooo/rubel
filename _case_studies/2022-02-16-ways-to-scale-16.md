@@ -5,7 +5,6 @@ image: "/assets/images/post_02.jpg"
 date: 2022-02-16 00:07:25 +0600
 ---
 
-<div class="article__body">
    <div class="ts-lede mb-2">
       Recent market conditions have not been kind to businesses. No enterprises across all industries have been immune to the various economic and social challenges that the last 5 years have bought. No amount of planning or marketing insight research could have prepared your business for what was to come.
    </div>
@@ -100,4 +99,3 @@ date: 2022-02-16 00:07:25 +0600
       Let’s talk!
       </a>
    </div>
-</div>

@@ -6,9 +6,11 @@ layout: default
 <section class="content__body px-1-5 py-4 bg-white">
 <article class="article max__body-width">
   <div class="article__meta mb-2">
-    <p class="f-mono ts-0-9" itemprop="datePublished">Feb 2022</p>
+    <p class="f-mono ts-0-9" itemprop="datePublished">{{ page.date | date_to_string }}</p>
   </div>
-  {{ content }}
+  <div class="article__body">
+    {{ page.content }}
+  </div>
 </article>
 </section>
 <section class="content__pagination px-1-5 py-4 bg-secondary">

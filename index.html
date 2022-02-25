@@ -6,25 +6,361 @@ pagination:
   collection: blogs
 ---
 
-{% include page_header.html  %}
-<section class="content__body px-1-5 pb-4 mt-1-5">
-    <div class="max__body-width">
-      <div class="filters my-2">
-        <a class="filters__filter filters__filter--active" href="#" title="View Blogs"> Blogs <span class="count">(377)</span>
-        </a>
-        <a class="filters__filter" href="/case_studies" title="View more entries for Case Studies"> Case Studies <span class="count">(10)</span>
-        </a> Guides <span class="count">(25)</span>
-        </a> Podcasts <span class="count">(6)</span>
-        </a>
-      </div>
-      <div class="resources__block">
-        <div class="resources__filter mb-4">
-        </div>
-        <div class="resources__content">
-          <div class="resources__entries mt-2" data-type="blogs">
-           {% include blog_posts.html %}
+<main class="home content">
+  <section class="content__header px-1-5">
+      <div class="max__body-width">
+          <div class="media-object">
+              <div class="media-object__content mb-4">
+                  <h1>Get your finances right</h1>
+
+                  <p class="ts-lede">Get your finances right with Accountancy Cloud. We offer the best online accounting, R&amp;D credits and CFO services for ambitious businesses who want to grow.</p>
+                  <div class="mt-3">
+                      <span class="tf-bold d-block">Switching to us is simple</span>
+                      <a class="button td-none mt-1-5 bg-black" href="https://theaccountancycloud.com/get-started" title="Talk to us">
+                          Talk to us
+                      </a>
+                  </div>
+              </div>
+              <div class="media-object__image" data-elementary="" data-minwidth="">
+                  <img
+                      width="3096"
+                      height="2401"
+                      alt="Home dashboard header"
+                      src="https://theaccountancycloud.com/cms-assets/illustrations/home-dashboard-header.png"
+                      srcset="https://theaccountancycloud.com/cms-assets/illustrations/home-dashboard-header.png 2x"
+                      sizes=""
+                      data-loaded="true"
+                      class="img-loaded"
+                      style="visibility: visible;"
+                  />
+              </div>
           </div>
-        </div>
       </div>
-    </div>
   </section>
+  <section id="content" class="content__body bg-white pt-3">
+      <div class="content__section px-1-5 bg-primary my-3">
+          <div class="max__body-width">
+              <div class="headingImage odd section-padding py-2-5">
+                  <div class="headingImage__content">
+                      <h2 class="heading mt-0 mb-2">We're winners</h2>
+                      <div class="ts-lede">
+                          <p>
+                              Accountancy Cloud are delighted to be named winners of the Medium Firm of the Year award in the 2021 Accounting Excellence Awards.
+                              <a href="https://www.accountingexcellence.co.uk/winners-2021/" target="_blank" rel="noreferrer noopener" title="This is a link for https://www.accountingexcellence.co.uk/winners-2021/">
+                                  See the full list of winners
+                              </a>
+                              .
+                          </p>
+                      </div>
+                  </div>
+                  <div class="headingImage__image mt-1">
+                      <img
+                          alt="Winner badge"
+                          src="https://theaccountancycloud.com/cms-assets/illustrations/winner-badge.png"
+                          srcset="https://theaccountancycloud.com/cms-assets/illustrations/winner-badge.png 2x"
+                          sizes=""
+                          data-loaded="true"
+                          class="img-loaded"
+                          style="visibility: visible;"
+                      />
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="content__section px-1-5 bg-white my-3">
+          <div class="max__body-width">
+              <div class="headingImage headingImage--divider-one mb-2-5 even section-padding py-2-5">
+                  <div class="headingImage__content">
+                      <h2 class="heading mt-0 mb-2">The best finance stack for entrepreneurs</h2>
+                      <div class="ts-lede">
+                          <p>
+                              70% of companies switch to us from their DIY or legacy system. Now, get your online accounting, tax prep and CFO problems, solved. Complete our
+                              <a href="https://theaccountancycloud.com/get-started" title="This is a link for https://theaccountancycloud.com/get-started">contact form</a>, and find out why 9 out of 10 customers recommend us.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="headingImage__image mt-1">
+                      <img
+                          alt="Online Accounting"
+                          src="https://theaccountancycloud.com/cms-assets/illustrations/how-it-works-new-better-way.png"
+                          srcset="https://theaccountancycloud.com/cms-assets/illustrations/how-it-works-new-better-way.png 2x"
+                          sizes=""
+                          data-loaded="true"
+                          class="img-loaded"
+                          style="visibility: visible;"
+                      />
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="content__section px-1-5 my-3 bg-white">
+          <div class="max__body-width">
+              <div class="content-grid pt-2 pb-4">
+                  <h2 class="heading mt-0">Why Switch?</h2>
+                  <div class="content-grid__blocks">
+                      <div class="content-block mt-3-5">
+                          <div class="content-block_image mb-1" data-type="icon">
+                              <img
+                                  alt="Online Accounting"
+                                  src="https://theaccountancycloud.com/cms-assets/illustrations/home-realtime-business-insights.png"
+                                  srcset="https://theaccountancycloud.com/cms-assets/illustrations/home-realtime-business-insights.png 2x"
+                                  sizes=""
+                                  data-loaded="true"
+                                  class="img-loaded"
+                                  style="visibility: visible;"
+                              />
+                          </div>
+
+                          <h3 class="heading ts-h4 mb-0-5">Powerful software</h3>
+                          <p>
+                              Included in our service, each customer gets in-house software to access live
+                              <a href="https://theaccountancycloud.com/what-we-do/a-platform-for-success" title="This is a link for https://theaccountancycloud.com/what-we-do/a-platform-for-success">financial dashboards</a> and real-time
+                              management reports.
+                          </p>
+                      </div>
+
+                      <div class="content-block mt-3-5">
+                          <div class="content-block_image mb-1" data-type="icon">
+                              <img
+                                  alt="Online Accounting"
+                                  src="https://theaccountancycloud.com/cms-assets/illustrations/home-plan-ahead.png"
+                                  srcset="https://theaccountancycloud.com/cms-assets/illustrations/home-plan-ahead.png 2x"
+                                  sizes=""
+                                  data-loaded="true"
+                                  class="img-loaded"
+                                  style="visibility: visible;"
+                              />
+                          </div>
+
+                          <h3 class="heading ts-h4 mb-0-5">Track cashflow</h3>
+                          <p>
+                              Stay on top of your working capital,
+                              <a href="https://theaccountancycloud.com/what-we-do/accounting-services/tax-accountants" title="This is a link for https://theaccountancycloud.com/what-we-do/accounting-services/tax-accountants">taxes</a>,
+                              and cashflow, to ensure your business is performing at its best.
+                          </p>
+                      </div>
+
+                      <div class="content-block mt-3-5">
+                          <div class="content-block_image mb-1" data-type="icon">
+                              <img
+                                  alt="Online Accounting"
+                                  src="https://theaccountancycloud.com/cms-assets/illustrations/home-personal-support.png"
+                                  srcset="https://theaccountancycloud.com/cms-assets/illustrations/home-personal-support.png 2x"
+                                  sizes=""
+                                  data-loaded="true"
+                                  class="img-loaded"
+                                  style="visibility: visible;"
+                              />
+                          </div>
+
+                          <h3 class="heading ts-h4 mb-0-5">Award winning support</h3>
+                          <p>Expect the best from us. Get a dedicated finance team that will handle all your online accounting, R&amp;D credits and CFO needs.</p>
+                      </div>
+                  </div>
+
+                  <div class="content-grid__button">
+                      <a class="button td-none my-3" href="what-we-do" title="Discover what we do" aria-label="Discover what we do">
+                          Discover what we do
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="content__section px-1-5 pt-3 my-3 bg-secondary">
+          <div class="max__body-width">
+              <div class="content-grid pt-2 pb-4">
+                  <h2 class="heading mt-0">Plans built for growth</h2>
+                  <div class="content-grid__blocks">
+                      <div class="content-block mt-3-5">
+                          <div class="content-block_image mb-1" data-type="standard">
+                              <img
+                                  alt="Online Accounting"
+                                  src="https://theaccountancycloud.com/cms-assets/illustrations/home-startup.png"
+                                  srcset="https://theaccountancycloud.com/cms-assets/illustrations/home-startup.png 2x"
+                                  sizes=""
+                                  data-loaded="true"
+                                  class="img-loaded"
+                                  style="visibility: visible;"
+                              />
+                          </div>
+
+                          <h3 class="heading ts-h4 mb-0-5">Early stage startup</h3>
+                          <p>Need your accounting system set up? Learn financial best practice and prime your business for the next stage of growth. We get you moving quickly with an online accounting solution that does what you need.</p>
+                      </div>
+
+                      <div class="content-block mt-3-5">
+                          <div class="content-block_image mb-1" data-type="standard">
+                              <img
+                                  alt="Online Accounting"
+                                  src="https://theaccountancycloud.com/cms-assets/illustrations/home-vc-backed.png"
+                                  srcset="https://theaccountancycloud.com/cms-assets/illustrations/home-vc-backed.png 2x"
+                                  sizes=""
+                                  data-loaded="true"
+                                  class="img-loaded"
+                                  style="visibility: visible;"
+                              />
+                          </div>
+
+                          <h3 class="heading ts-h4 mb-0-5">Venture backed</h3>
+                          <p>Spend less time worrying about your finances and more time shaping your company’s future. Get your bookkeeping, R&amp;D credits and CFO problems, solved.</p>
+                      </div>
+
+                      <div class="content-block mt-3-5">
+                          <div class="content-block_image mb-1" data-type="standard">
+                              <img
+                                  alt="Online Accounting"
+                                  src="https://theaccountancycloud.com/cms-assets/illustrations/home-growing.png"
+                                  srcset="https://theaccountancycloud.com/cms-assets/illustrations/home-growing.png 2x"
+                                  sizes=""
+                                  data-loaded="true"
+                                  class="img-loaded"
+                                  style="visibility: visible;"
+                              />
+                          </div>
+
+                          <h3 class="heading ts-h4 mb-0-5">Later stage</h3>
+                          <p>We can provide flexible finance support for your late stage startup. Gain the financial accuracy, you need to make smarter decisions, drive efficiency, and achieve total organizational alignment.</p>
+                      </div>
+                  </div>
+
+                  <div class="content-grid__button"></div>
+              </div>
+          </div>
+      </div>
+      <div class="content__section px-1-5 my-3">
+          <div class="max__body-width">
+              <div class="logo-block pt-4 pb-1">
+                  <div class="logo-block__content">
+                      <h3 class="heading ts-h4 ta-centre">Join 200+ amazing companies</h3>
+                  </div>
+                  <div class="logo-block__media mt-2">
+                      <div class="logo-block__images">
+                          <img
+                              alt="Frizzenti"
+                              src="https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-frizzenti.svg"
+                              srcset="https://theaccountancycloud.com/cms-assets/client/_thumb/home-clients-frizzenti.svg 120w, https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-frizzenti.svg 200w"
+                              sizes="(max-width: 500px) 120px, (max-width: 768px) 170px, (max-width: 999px) 200px, 200px"
+                              data-loaded="true"
+                              class="img-loaded"
+                              style="visibility: visible;"
+                          />
+                      </div>
+                      <div class="logo-block__images">
+                          <img
+                              alt="Remy Sleep"
+                              src="https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-remmy.svg"
+                              srcset="https://theaccountancycloud.com/cms-assets/client/_thumb/home-clients-remmy.svg 120w, https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-remmy.svg 200w"
+                              sizes="(max-width: 500px) 120px, (max-width: 768px) 170px, (max-width: 999px) 200px, 200px"
+                              data-loaded="true"
+                              class="img-loaded"
+                              style="visibility: visible;"
+                          />
+                      </div>
+                      <div class="logo-block__images">
+                          <img
+                              alt="Feel"
+                              src="https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-feel.svg"
+                              srcset="https://theaccountancycloud.com/cms-assets/client/_thumb/home-clients-feel.svg 120w, https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-feel.svg 200w"
+                              sizes="(max-width: 500px) 120px, (max-width: 768px) 170px, (max-width: 999px) 200px, 200px"
+                              data-loaded="true"
+                              class="img-loaded"
+                              style="visibility: visible;"
+                          />
+                      </div>
+                      <div class="logo-block__images">
+                          <img
+                              alt="Manyone"
+                              src="https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-manyone.svg"
+                              srcset="https://theaccountancycloud.com/cms-assets/client/_thumb/home-clients-manyone.svg 120w, https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-manyone.svg 200w"
+                              sizes="(max-width: 500px) 120px, (max-width: 768px) 170px, (max-width: 999px) 200px, 200px"
+                              data-loaded="true"
+                              class="img-loaded"
+                              style="visibility: visible;"
+                          />
+                      </div>
+                      <div class="logo-block__images">
+                          <img
+                              alt="Olio"
+                              src="https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-olio.svg"
+                              srcset="https://theaccountancycloud.com/cms-assets/client/_thumb/home-clients-olio.svg 120w, https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-olio.svg 200w"
+                              sizes="(max-width: 500px) 120px, (max-width: 768px) 170px, (max-width: 999px) 200px, 200px"
+                              data-loaded="true"
+                              class="img-loaded"
+                              style="visibility: visible;"
+                          />
+                      </div>
+                      <div class="logo-block__images">
+                          <img
+                              alt="Buffer"
+                              src="https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-buffer.svg"
+                              srcset="https://theaccountancycloud.com/cms-assets/client/_thumb/home-clients-buffer.svg 120w, https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-buffer.svg 200w"
+                              sizes="(max-width: 500px) 120px, (max-width: 768px) 170px, (max-width: 999px) 200px, 200px"
+                              data-loaded="true"
+                              class="img-loaded"
+                              style="visibility: visible;"
+                          />
+                      </div>
+                      <div class="logo-block__images">
+                          <img
+                              alt="Beam"
+                              src="https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-beam.svg"
+                              srcset="https://theaccountancycloud.com/cms-assets/client/_thumb/home-clients-beam.svg 120w, https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-beam.svg 200w"
+                              sizes="(max-width: 500px) 120px, (max-width: 768px) 170px, (max-width: 999px) 200px, 200px"
+                              data-loaded="true"
+                              class="img-loaded"
+                              style="visibility: visible;"
+                          />
+                      </div>
+                      <div class="logo-block__images">
+                          <img
+                              alt="Fuel Ventures"
+                              src="https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-fuel-ventures.svg"
+                              srcset="https://theaccountancycloud.com/cms-assets/client/_thumb/home-clients-fuel-ventures.svg 120w, https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-fuel-ventures.svg 200w"
+                              sizes="(max-width: 500px) 120px, (max-width: 768px) 170px, (max-width: 999px) 200px, 200px"
+                              data-loaded="true"
+                              class="img-loaded"
+                              style="visibility: visible;"
+                          />
+                      </div>
+                      <div class="logo-block__images">
+                          <img
+                              alt="Chaser"
+                              src="https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-chaser.svg"
+                              srcset="https://theaccountancycloud.com/cms-assets/client/_thumb/home-clients-chaser.svg 120w, https://theaccountancycloud.com/cms-assets/client/_thumb200/home-clients-chaser.svg 200w"
+                              sizes="(max-width: 500px) 120px, (max-width: 768px) 170px, (max-width: 999px) 200px, 200px"
+                              data-loaded="true"
+                              class="img-loaded"
+                              style="visibility: visible;"
+                          />
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="content__section px-1-5 bg-white my-3">
+          <div class="max__body-width">
+              <div class="headingImage headingImage--divider-one mb-2-5 odd section-padding py-2-5">
+                  <div class="headingImage__content">
+                      <h2 class="heading mt-0 mb-2">School of Startups</h2>
+                      <div class="ts-lede"><p>Free educational online resources for startups. We've got the tips, tricks and startup know-how for business success.</p></div>
+
+                      <a class="button td-none my-2" href="https://theaccountancycloud.com/school-of-startups" title="Go there" aria-label="Go there">
+                          Go there
+                      </a>
+                  </div>
+                  <div class="headingImage__image mt-1 headingImage__image--button">
+                      <img
+                          alt="Home ac hub"
+                          src="https://theaccountancycloud.com/cms-assets/illustrations/home-ac-hub.png"
+                          srcset="https://theaccountancycloud.com/cms-assets/illustrations/home-ac-hub.png 2x"
+                          sizes=""
+                          data-loaded="true"
+                          class="img-loaded"
+                          style="visibility: visible;"
+                      />
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</main>

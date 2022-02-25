@@ -2,7 +2,7 @@
 layout: post
 title:  "Case Studies Title Four"
 categories: jekyll update
-image: "/assets/images/post_04.jpg"
+image: "/assets/images/post_11.jpg"
 date: 2022-02-18 00:07:25 +0600
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
