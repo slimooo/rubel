@@ -3,26 +3,44 @@ layout: post
 title:  "Government Scheme Providing SMEs with Discounts on Software"
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+La [CNIL a sanctionnée en février 2022](https://www.cnil.fr/fr/utilisation-de-google-analytics-et-transferts-de-donnees-vers-les-etats-unis-la-cnil-met-en-demeure) un site internet français pour son utilisation de Google Analytics. L'outil serait non conforme au RGPD car transférant des données personnelles vers les États-Unis sans protection suffisante.
 
-Jekyll requires blog post files to be named according to the following format:
+Nombreuses sont donc les personnes à la recherche d'une alternative gratuite à Google Analytics.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+En avant-propos, nous souhaitions souligner que Google Analytics n'est pas totalement gratuit. S'il est effectivement mis à disposition gratuitement des éditeurs de sites internet, en contrepartie Google exploite les données à des fins de profilage des visiteurs. In fine, le coût réel de son utilisation est à retrouver sur les tarifs de sa plateforme publicitaire Google Ads.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+## Matomo la solution open source gratuite ?
 
-Jekyll also offers powerful support for code snippets:
+Depuis plus d'une quinzaine d'années, Matomo (anciennement Piwik) se positionne comme une solution alternative et libre de Google Analytics. L'outil est puissant, riche en fonctionnalités, et est plutôt bien adapté pour une utilisation avancée.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+L'application peut se [télécharger gratuitement et s'installer sur son propre serveur](https://fr.matomo.org/docs/installation/).
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Toutefois, le tarif d'une application ne se résume pas seulement à son accès. Il est aussi nécessaire de prendre en compte :
+- L'hébergement de l'application, et Matomo est plutôt [une solution gourmande en ressources](https://fr.matomo.org/docs/requirements/)
+- Le temps nécessaire pour les développeurs pour l'installation et la configuration de l'application (notamment la prise en compte du [guide de configuration de la CNIL](https://www.cnil.fr/sites/default/files/atoms/files/matomo_analytics_-_exemption_-_guide_de_configuration.pdf))
+- Le temps à consacrer pour les mises à jour et les vérifications de sécurité informatique
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Matomo est une solution gratuite si vous avez déjà des serveurs performants et du temps à y consacrer.
+
+L'application de mesure d'audience est aussi proposée en version cloud, mais aucune version gratuite n'est disponible. Et en termes de tarifs, ce n'est pas donné. À titre d'exemple pour 2 millions de pages vues mensuelles Matomo Cloud est proposé à 309 euros, contre seulement 44 euros chez Abla Analytics.
+
+## Les logs du serveur sont-ils suffisants pour des analyses d'audience ?
+
+Les logs permettent d'avoir un aperçu sur l'activité réalisée sur un site internet. Il est possible d'installer des solutions comme [AWStats](https://github.com/eldy/awstats) pour avoir une visualisation des données. Certains hébergeurs proposent même cette fonctionnalité par défaut.
+
+Toutefois, ces solutions ne permettent pas d'obtenir des données aussi précises que celle d'un outil de mesure d'audience :
+- les visites générées par les robots ne sont pas exclues des résultats
+- les sources de trafic ne sont agglomérées (ex: fb.com et facebool.com seront considérés comme deux sources distinctes)
+- les visites uniques ne sont pas calculées aussi précisément
+
+Nous vous invitons à comparer les résultats obtenus entre une solution d'analyse d'audience et une solution d'analyse de logs.
+
+Avec ces outils vous pouvez également oublier l'expérience utilisateur adaptée, le travail collaboratif ou encore la mise à disposition d'une API.
+
+## Abla Analytics propose-t-elle une version gratuite ?
+
+Abla Analytics propose une solution totalement gratuite et à vie pour les sites générant moins de 5000 pages vues par mois.
+
+Pour les autres sites, nous proposons une période d'essai de 30 jours sans engagement. Nos tarifs sont des plus compétitifs et débutent à partir de 6€ par mois. Si vous trouvez moins chers ailleurs n'existez pas à nous envoyer un mail!
+
+En résumé, une solution gratuite, aussi avancée que Google Analytics et conforme au RGPD, est un mouton à 5 pattes. 
