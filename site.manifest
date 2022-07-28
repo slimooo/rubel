@@ -1,0 +1,14 @@
+{
+    "name": "Abla Analytics",
+    "short_name": "Abla",
+    "icons": [
+        {
+            "src": "https://abla.io/assets/images/android.svg",
+            "sizes": "1000x1000",
+            "type": "any"
+        },
+    ],
+    "theme_color": "#c9e4cb",
+    "background_color": "#c9e4cb",
+    "display": "standalone"
+}
